@@ -1,38 +1,171 @@
-.App {
-  text-align: center;
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.clear {
+  clear: both;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#header {
+  height: 46px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#nav {
+  display: inline-block;
+}
+
+#nav,
+.subnav {
+  list-style: none;
+}
+
+#nav>li {
+  display: inline-block;
+  position: relative;
+}
+
+li:hover .subnav {
+  display: block;
+}
+
+#nav>li:hover>a,
+#nav .subnav li:hover a {
+  color: #000;
+  background-color: #ccc;
+}
+
+#nav>li>a {
   color: white;
+  text-transform: uppercase;
+  padding: 0 24px;
+  line-height: 46px;
 }
 
-.App-link {
-  color: #61dafb;
+#nav li a {
+  text-decoration: none;
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subnav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.subnav li a {
+  color: #000;
+  min-width: 160px;
+  padding: 0 16px;
+  line-height: 38.5px;
+}
+
+#nav .nav-icon {
+  font-size: 14px;
+  padding-left: 3px;
+}
+
+#search {
+  float: right;
+}
+
+#search:hover {
+  background-color: #f44336;
+  cursor: pointer;
+}
+
+#search .nav-icon {
+  color: white;
+  line-height: 46px;
+  padding: 0 23px;
+}
+
+#slider {
+  margin-top: 46px;
+  padding-top: 50%;
+  background-color: green;
+  background: url('./assets/img/slider1.jpg') top center / cover no-repeat ;
+  position: relative;
+}
+
+.description{
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 32px;
+  font-weight: bold;
+}
+
+.description-heading{
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+#content {
+
+}
+
+.content-session{
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 16px;
+}
+
+.content-heading{
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-align: center;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.content-subheading{
+  text-align: center;
+  font-style: italic;
+  opacity: 0.6;
+  font-size: 15px;
+  margin: 15px 0;
+}
+
+.content-about{
+  font-size: 15px;
+  text-align: justify;
+}
+.member-lists{
+  text-align: center;
+  padding: 32px 0;
+}
+
+.member-item{
+  float: left;
+  width: calc(100%/3);
+}
+
+.member-name{
+  font-size: 15px;
+  margin: 15px 0;
+}
+
+.member-img{
+  width: 153px;
+  border-radius: 4px;
 }
