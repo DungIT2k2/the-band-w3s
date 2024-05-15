@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import './Responsive.css';
 import Content from './components/content';
 import Footer from './components/footer';
 import Header from './components/header';

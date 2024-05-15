@@ -13,15 +13,15 @@ function Content({ show }) {
                 <p className="content-subheading">We love music</p>
                 <p className="content-about">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <div className="row member-lists">
-                    <div className="col col-third">
+                    <div className="col col-third s-col-full mt-32">
                         <p className="member-name">Name</p>
                         <img src={img} alt="Name" className="member-img" />
                     </div>
-                    <div className="col col-third">
+                    <div className="col col-third s-col-full mt-32">
                         <p className="member-name">Name</p>
                         <img src={img} alt="Name" className="member-img" />
                     </div>
-                    <div className="col col-third">
+                    <div className="col col-third s-col-full mt-32">
                         <p className="member-name">Name</p>
                         <img src={img} alt="Name" className="member-img" />
                     </div>
@@ -40,31 +40,31 @@ function Content({ show }) {
                         <li>November <span className="quantity">3</span></li>
                     </ul>
                     <div className="row places-list">
-                        <div className="col col-third">
+                        <div className="col col-third s-col-full mt-16">
                             <img src={place1} alt="" className="place-img" />
                             <div className="place-content">
                                 <h3 className="place-heading">New York</h3>
                                 <p className="place-date">Fri 27 Nov 2016</p>
                                 <p className="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button className="buy-tickets-btn" onClick={show}>Buy tickets</button>
+                                <button className="buy-tickets-btn s-full-width" onClick={show}>Buy tickets</button>
                             </div>
                         </div>
-                        <div className="col col-third">
+                        <div className="col col-third s-col-full mt-16">
                             <img src={place2} alt="" className="place-img" />
                             <div className="place-content">
                                 <h3 className="place-heading">Paris</h3>
                                 <p className="place-date">Sat 28 Nov 2016</p>
                                 <p className="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button className="buy-tickets-btn" onClick={show}>Buy tickets</button>
+                                <button className="buy-tickets-btn s-full-width" onClick={show}>Buy tickets</button>
                             </div>
                         </div>
-                        <div className="col col-third">
+                        <div className="col col-third s-col-full mt-16">
                             <img src={place3} alt="" className="place-img" />
                             <div className="place-content">
                                 <h3 className="place-heading">San Francisco</h3>
                                 <p className="place-date">Sun 29 Nov 2016</p>
                                 <p className="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button className="buy-tickets-btn" onClick={show}>Buy tickets</button>
+                                <button className="buy-tickets-btn s-full-width" onClick={show}>Buy tickets</button>
                             </div>
                         </div>
                     </div>
@@ -76,18 +76,18 @@ function Content({ show }) {
                 <h2 className="content-heading">CONTACT</h2>
                 <p className="content-subheading">Fan? Drop a note!</p>
                 <div className="row contact-body">
-                    <div className="col col-second contact-info">
+                    <div className="col col-second s-col-full contact-info">
                         <p className="contact-item"><i className="ti-location-pin"></i> Chicago, US</p>
                         <p className="contact-item"><i className="ti-mobile"></i> Phone: +00 151515</p>
                         <p className="contact-item"><i className="ti-email"></i> Email: mail@mail.com</p>
                     </div>
-                    <div className="col col-second">
+                    <div className="col col-second s-col-full s-mt-32">
                         <form action="">
                             <div className="row">
-                                <div className="col col-second">
+                                <div className="col col-second s-col-full">
                                     <input type="text" placeholder="Name" required className="form-item" />
                                 </div>
-                                <div className="col col-second">
+                                <div className="col col-second s-col-full s-mt-8">
                                     <input type="email" placeholder="Email" required className="form-item" />
                                 </div>
                             </div>
@@ -96,7 +96,7 @@ function Content({ show }) {
                                     <input type="text" placeholder="Message" required className="form-item" />
                                 </div>
                             </div>
-                            <input type="submit" className="form-submit-btn" value="SEND"/>
+                            <input type="submit" className="form-submit-btn s-full-width" value="SEND"/>
                         </form>
                     </div>
                 </div>
