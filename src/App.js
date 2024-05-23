@@ -9,12 +9,15 @@ import Slider from './components/slider';
 
 function App() {
   var [model, setModel] = useState(false);
+
   function handleClick(){
     setModel(true)
   }
+
   function handleCancelClick(){
     setModel(false)
   }
+  
   return (
     <div className="App">
       <Header />
@@ -25,5 +28,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;
